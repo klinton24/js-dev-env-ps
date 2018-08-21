@@ -2,6 +2,7 @@ export default function getBaseUrl() {
     return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://mysterious-dawn-16770.herokuapp.com/';
 }
 
+//Gets a parameter from URL rather than mock API
 function getQueryStringParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
